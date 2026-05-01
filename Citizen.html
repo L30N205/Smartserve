@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Citizens Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="citizen-page">
+  <main class="page">
+    <section class="right-panel">
+      <div class="register-box">
+        <h2>CITIZENS LOGIN</h2>
+        <p class="register-title">Sign in to your account</p>
+        <form id="citizensLoginForm">
+          <div class="input-group">
+            <input type="text" id="citizenFullname" placeholder="Fullname" autocomplete="name" />
+            <input type="tel" id="citizenPhone" placeholder="Phone" autocomplete="tel" />
+            <div class="password-field">
+              <input type="password" id="citizenPassword" placeholder="Password" autocomplete="current-password" />
+              <button type="button" class="eye-button" aria-label="Toggle password">👁</button>
+            </div>
+          </div>
+          <div class="checkbox-row">
+            <label><input type="checkbox" /> Remember me</label>
+            <a href="#" class="forgot-link">Forgot</a>
+          </div>
+          <button type="submit" class="btn btn-primary">LOGIN</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

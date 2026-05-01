@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Officials Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="official-page">
+  <main class="page">
+    <section class="right-panel">
+      <div class="register-box">
+        <h2>OFFICIALS</h2>
+        <p class="register-title">PENDING REQUIREMENTS</p>
+        <form id="officialsForm">
+          <!-- Type of Official -->
+          <div class="input-group">
+            <label for="officialType">Type of Official</label>
+            <select id="officialType" name="officialType">
+              <option value="official">Officials</option>
+              <option value="chairman">Chairman</option> <!-- ✅ Added Chairman -->
+            </select>
+          </div>
+
+          <!-- Certificate of Proclamation -->
+          <div class="input-group">
+            <label for="certificate">Certificate of Proclamation</label>
+            <input type="file" id="certificate" name="certificate" />
+          </div>
+
+          <!-- Valid Government ID -->
+          <div class="input-group">
+            <label for="govID">Valid Government ID</label>
+            <input type="file" id="govID" name="govID" />
+          </div>
+
+          <!-- Submit -->
+          <button type="submit" class="btn btn-primary">SUBMIT</button>
+          <p class="terms">Processing may take 1 to 3 working days.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

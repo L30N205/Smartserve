@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartServe Management System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <!-- Left Panel -->
+    <section class="left-panel">
+      <div class="brand">
+        <!-- ✅ Logo now inside Assets folder -->
+        <img src="Assets/logo.png" alt="SmartServe Logo" class="logo">
+        <h1>SMARTSERVE MANAGEMENT SYSTEM</h1>
+        <p class="tagline">Efficient, Transparent, and Digital Barangay Services</p>
+      </div>
+      <div class="features">
+        <!-- Icons now inside Assets folder -->
+        <div class="feature"><img src="Assets/user.png" alt="User Icon"> Comprehensive Management of Barangay Records and Services</div>
+        <div class="feature"><img src="Assets/clip.png" alt="Document Icon"> Real-Time Tracking of Document Requests</div>
+        <div class="feature"><img src="Assets/proc.png" alt="Process Icon"> Secure and Centralized Data Management</div>
+        <div class="feature"><img src="Assets/bell.png" alt="Bell Icon"> Real-Time Notifications and Updates</div>
+      </div>
+    </section>
+
+    <!-- Right Panel: Register -->
+    <section id="registerScreen" class="right-panel">
+      <div class="register-box">
+        <h2>WELCOME</h2>
+        <p class="register-title">REGISTER</p>
+        <form id="registerForm">
+          <div class="input-group">
+            <input type="text" id="lastname" placeholder="Lastname" autocomplete="family-name" />
+            <input type="text" id="place" placeholder="Place" autocomplete="organization" />
+            <input type="tel" id="phone" placeholder="Phone" autocomplete="tel" />
+            <div class="password-field">
+              <input type="password" id="password" placeholder="Password" autocomplete="new-password" />
+              <button type="button" class="eye-button" aria-label="Toggle password">👁</button>
+            </div>
+          </div>
+          <div class="account-type">
+            <span>TYPE OF ACCOUNT</span>
+            <div class="checkbox-row">
+              <label><input type="checkbox" name="account" value="official" /> OFFICIAL</label>
+              <label><input type="checkbox" name="account" value="citizens" /> CITIZENS</label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">CREATE ACCOUNT</button>
+        </form>
+        <p class="terms">Privacy policy · Terms & Condition</p>
+        <p class="or-text">OR LOG IN AS</p>
+        <div class="login-buttons">
+          <button type="button" class="btn btn-secondary" data-role="official">OFFICIAL</button>
+          <button type="button" class="btn btn-secondary" data-role="citizens">CITIZENS</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Link JS -->
+  <script src="script.js"></script>
+</body>
+</html>
